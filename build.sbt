@@ -35,9 +35,9 @@ excludeFilter in rjs := {
   new SimpleFileFilter(_.getCanonicalPath startsWith libs)
 }
 
-LessKeys.compress := true
+LessKeys.compress in Assets := true
 
-LessKeys.sourceMap := false
+LessKeys.sourceMap := true
 
 RjsKeys.generateSourceMaps := false
 
