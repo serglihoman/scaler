@@ -1,4 +1,4 @@
-@(title: String, bgImageUrl: String)(content: Html)
+@(title: String, bgImageUrl: String)(headerContent: Html)(content: Html)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,7 @@
 
         @navigation()
 
-        @header(bgImageUrl)
+        @header.header(bgImageUrl, headerContent)
 
         @content
 
